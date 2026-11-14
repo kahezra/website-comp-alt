@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+:root {
+    --slightly-lighter-black: #0a0a0a;
+    --navy-blue: #000080;
+    --dark-blue: #0020c2;
+}
+
+header .navbar {
+    width: 100%;
+    height: 5vh;
+
+    background: var(--slightly-lighter-black);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 30vw;
+}
+
+header .navbar .logo {
+    color:aliceblue;
+}
+
+header .navbar .link-wrapper {
+    width: 30%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: 25px;
+}
+
+header .navbar .link-wrapper a {
+    font-family: 'Cascadia Code';
+    color: cyan;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+header .navbar .link-wrapper a:hover {
+    color:darkcyan;
+    background: #ff7474;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+
+    padding: 20px;
+
+    background: linear-gradient(var(--navy-blue), var(--slightly-lighter-black))
+}
+
+main .title {
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main .title h1 {
+    color: white;
+}
+
+main .container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .container .left {
+    width: 40%;
+    height: 100%;
+}
+
+main .container .left .posts {
+    width: 100%;
+    height: 75%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .container .left .posts .post {
+    background:#0f172a;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+main .container .left .posts .post h2, 
+main .container .left .posts .post p {
+    color: #f8fafc;
+}
+
+main .container .left .posts .post p {
+    text-align:justify;
+}
+
+main .container .right { 
+    width: 40%;
+    height: 100%;
+}
+
+main .container .right .wrapper {
+    width: 100%;
+    height: 75%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main .container .right .wrapper .post-form,
+main .container .right .wrapper .login {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 10px;
+
+    border-radius: 10px;
+}
+
+main .container .right .wrapper .post-form {
+    width: 100%;
+    height: 45%;
+
+    z-index: 3;
+}
+
+main .container .right .wrapper .login {
+    width: 100%;
+    height: 30%;
+}
+
+main .container .right .wrapper .post-form .post-form-wrapper {
+    height: 75%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .right .wrapper .post-form .post-form-wrapper .title,
+main .container .right .wrapper .post-form .post-form-wrapper .topic,
+main .container .right .wrapper .post-form .post-form-wrapper .content,
+main .container .right .wrapper .login .username,
+main .container .right .wrapper .login .password
+{
+    
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .container .right .wrapper input,
+main .container .right .wrapper select,
+main .container .right .wrapper textarea {
+    width: 75%;
+    height: 30px;
+    border: 1px solid #334155;
+    border-radius: 10px;
+
+    background: #1E293B;
+    color: #F8FAFC;
+}
+
+main .container .right .wrapper h2 {
+    color: #f8fafc;
+}
+
+main .container .right .wrapper label {
+    color: #cbd5e1;
+}
+
+footer {
+    width: 100%;
+    height: 15vh;
+
+    background: var(--slightly-lighter-black);
+}
+
+footer .contact {
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .contact span {
+    color: white;
+}
+
+footer .copyright {
+    width: 100%;
+    height: 28%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .copyright span {
+    color: white;
+}
