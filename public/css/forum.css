@@ -54,7 +54,9 @@ header .navbar .link-wrapper a:hover {
 
 main {
     width: 100%;
+    min-height: fit-content;
     height: 100vh;
+    max-height: 120vh;
 
     padding: 20px;
 
@@ -101,15 +103,27 @@ main .container .left .posts {
 }
 
 main .container .left .posts .post {
+
+    width: 100%;
+    height: fit-content;
+
     background:#0f172a;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid rgba(255,255,255,0.15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 main .container .left .posts .post h2, 
 main .container .left .posts .post p {
     color: #f8fafc;
+}
+
+main .container .left .posts .post p {
+    font-size: 10pt;
 }
 
 main .container .left .posts .post p {
@@ -176,9 +190,17 @@ main .container .right .wrapper .login .password
     justify-content: space-between;
 }
 
+main .container .right .wrapper .login label,
+main .container .right .wrapper .post-form .post-form-wrapper label {
+    font-size: 11pt;
+}
+
 main .container .right .wrapper input,
 main .container .right .wrapper select,
 main .container .right .wrapper textarea {
+
+    display: block;
+
     width: 75%;
     height: 30px;
     border: 1px solid #334155;
@@ -186,6 +208,9 @@ main .container .right .wrapper textarea {
 
     background: #1E293B;
     color: #F8FAFC;
+
+    resize: vertical;
+    overflow: auto;
 }
 
 main .container .right .wrapper h2 {
