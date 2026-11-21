@@ -8,9 +8,12 @@ just run
 npm install
 ```
 
-## for running the server
-go to any typescript file in the <code>backend</code> folder and type:
-
+## how to run the server
 ```bash
-npx tsx <file>
+npm run serve
+```
+
+## how to watch and compile frontend ts files
+```bash
+npm run compile-ts
 ```
