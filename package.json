@@ -4,20 +4,29 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "cd backend && npx tsx watch backend.ts",
+    "compile-ts": "cd public/ts && npx tsc --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
     "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "mysql": "^2.18.1",
     "tsc-clear": "^1.0.9",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },
   "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
+    "@types/express-session": "^1.19.0",
+    "@types/mysql": "^2.15.28",
     "@types/node": "^26.6.6"
   }
 }

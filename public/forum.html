@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="http://localhost/website-comp-alt/public/css/forum.css">
-    <title>Website Alt Comp</title>
+    <title>Forum</title>
 </head>
 <body>
     <header>
@@ -19,8 +19,8 @@
                 <i class="fa-brands fa-sellcast"></i>
             </div>
             <div class="link-wrapper">
-                <a href="https://localhost/website-comp-alt/public/">Home</a>
-                <a href="https://localhost/website-comp-alt/public/forum">Forum</a>
+                <a href="https://localhost/website-comp-alt/">Home</a>
+                <a href="https://localhost/website-comp-alt/forum">Forum</a>
             </div>
         </nav>
     </header>
@@ -62,7 +62,7 @@
                         </div>
                         <br>
                         <div class="post-wrapper">
-                            <form method="post">
+                            <form method="post" id="post">
                                 <div class="post-form-wrapper">
                                     <div class="title">
                                         <label for="title">Title: </label>
@@ -83,23 +83,11 @@
                                         <textarea name="" id="content" placeholder="Enter content here..."></textarea>
                                     </div>
                                 </div>
-                            </form>                        
+                            </form>                    
                         </div>
                     </section>
                     <section class="login">
-                        <h2>Login</h2>
-                        <br>
-                        <form action="" method="get">
-                            <div class="username">
-                                <label for="username">Username: </label>
-                                <input type="text" placeholder="Enter your username...">
-                            </div>
-                            <br>
-                            <div class="password">
-                                <label for="password">Password: </label>
-                                <input type="password" name="" id="password" placeholder="Enter your password...">
-                            </div>   
-                        </form>
+                        <span>You're not logged in. Log in <a href="https://localhost/website-comp-alt/login">here.</a></span>          
                     </section>
                 </div> 
             </div>
@@ -127,5 +115,6 @@
             </div>
         </section>
     </footer>
+    <!-- <script type="module" src="https://localhost/website-comp-alt/js/document/index.js"></script> -->
 </body>
 </html>
